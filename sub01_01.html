@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowit</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/glowit.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        <nav>
+            <ul class="gnb">
+                <li><a href="sub01_01.html">회사 소개</a>
+                <ul class="lnb">
+                    <li><a href="sub01_01.html">인사말</a></li>
+                    <li><a href="sub01_02.html">연혁</a></li>
+                    <li><a href="#">조직도</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">제품 안내</a>
+                    <ul class="lnb">
+                        <li><a href="#">백열등</a></li>
+                        <li><a href="#">전구</a></li>
+                        <li><a href="#">형광등</a></li>
+                        <li><a href="#">LED</a></li>
+                        </ul>
+                    </li>
+                <li><a href="#">사업 분야</a>
+                    <ul class="lnb">
+                        <li><a href="#">조명 공사</a></li>
+                        <li><a href="#">조명 디자인</a></li>
+                        <li><a href="#">조명 납품</a></li>
+                        <li><a href="#">기타</a></li>
+                        </ul>
+                    </li>
+                <li><a href="#">인증 및 수상내역</a>
+                    <ul class="lnb">
+                        <li><a href="#">인증서</a></li>
+                        <li><a href="#">수상내역</a></li>
+                        <li><a href="#">프로젝트</a></li>
+                        </ul>
+                    </li>
+                <li><a href="#">오시는 길</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger"></div>
+    </header>
+
+    <a href="#" class="prod_intro">
+        Product inquiry
+    </a>
+    <div id="visual_sub">
+        <div class="textbox">
+            <strong>Glowit</strong>
+            <span>인사말</span>
+        </div>
+    </div>
+    <div id="section_sub">
+        <div class="sub_menu">
+            <div class="centerbox">
+                <ul>
+                    <li class="on"><a href="sub01_01.html">인사말</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">조직도</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section_text">
+            <h2>Glowit</h2>
+            <span>“조명공사에서는 전문적인 기술과 정밀한 작업으로 <br>
+                공간을 환하고 아름답게 물들입니다.”</span>
+            <p>"2000년 창업된 저희 회사는 조명 분야에서 다양한 전문 서비스를 제공하는 기업입니다. <br> LED 사업 분야에서 선도적인 위치를 차지하며, 조명공사, 납품, 그리고 조명디자인에 특히 중점을 두고 있습니다. <br> 현대적이고 혁신적인 기술을 활용하여 고객들에게 탁월한 조명 솔루션을 제공하며,  <br>더 나은 조명 경험을 위해 끊임없이 노력하고 있습니다. <br> 고객의 다양한 요구에 부응하기 위해 우리는 다양한 프로젝트에 참여하며, <br> 고객 중심의 서비스로 신뢰를 쌓아가고 있습니다. 우리의 목표는 더 밝고 아름다운 미래를 조명하여, <br> 고객과 함께하는 가치 있는 여정을 만드는 것입니다."
+        </div>
+   </div>
+    
+    <footer>
+        <div class="centerbox">
+        <div class="about">
+            <h2><span>ABOUT <em>Glowit</em></span></h2>
+            <p>지속적인 연구 개발을 바탕으로 <br>
+                양질의 제품과 서비스로 여러분의 요구와 기대에<br>
+                부응하는 기업이 되겠습니다.</p>
+        </div>
+        <div class="quick">
+            <h2><span>QUICK LINKS</span></h2>
+            <div class="info">
+                <a href="sub.html">· 회사소개 </a>
+                <a href="#">· 제품소개</a>
+                <a href="#">· 사업분야</a>
+                <a href="#">· 인증 및 수상내역</a>
+                <a href="#">· 오시는 길</a>
+            </div>
+        </div>
+        <div class="contect">
+            <h2><span>CONTACT US</span></h2>
+            <p>회사명 (주)글로우잇<br>
+                주소 경기도 성남시 분당구 미금<br>
+                메일 glowit@glowit.com <br>
+                전화번호 031-123-4567</p>
+        </div>
+    </div>
+    </footer>
+    <div class="copyright">
+        © (주)글로우잇 All Rights Reserved ADM
+    </div>
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/action.js"></script>
+    <!-- <script>
+        // 브라우저 화면 확대 및 축소를 완전히 막는 스크립트
+document.addEventListener('keydown', function (event) {
+    // Ctrl 키 (Windows) 또는 Command 키 (Mac)와 + 또는 - 키가 동시에 눌려있는 경우
+    if ((event.ctrlKey || event.metaKey) && (event.key === '+' || event.key === '-')) {
+        event.preventDefault(); // 이벤트의 기본 동작을 막음
+    }
+});
+
+// 마우스 휠로의 화면 조절을 막는 스크립트
+document.addEventListener('wheel', function (event) {
+    if (event.ctrlKey || event.metaKey) {
+        event.preventDefault(); // 이벤트의 기본 동작을 막음
+    }
+}, { passive: false });
+    </script> -->
+</body>
+</html>
